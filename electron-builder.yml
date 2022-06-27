@@ -1,0 +1,12 @@
+appId: com.gameplex.wallet
+productName: Gameplex Wallet
+copyright: Copyright © 2022 Gameplex
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
