@@ -123,35 +123,35 @@ export default function ActivityView({
                         <div className="w-full relative top-[-1.9rem] bg-[#1e1e1e] rounded-xl p-5">
                           {/* Filter Buttons */}
                           <div className="text-right mb-2">
-                            <button className="focus:border-transparent focus:ring-0 text-black mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff63cc] hover:bg-[#02ff63] bg-[#02ff63] font-bold rounded-md text-sm py-2 px-3 mr-2 my-3">
+                            <button className="focus:border-transparent focus:ring-0 text-black mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff6355] hover:bg-[#02ff63] bg-[#02ff63] font-bold rounded-xl text-sm py-2 px-3 mr-2 my-3">
                               7 Days
                             </button>
-                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff63cc] hover:bg-[#02ff63] font-bold rounded-md text-sm py-2 px-3 mr-2 my-3">
+                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff6355] hover:bg-[#02ff63] font-bold rounded-xl text-sm py-2 px-3 mr-2 my-3">
                               24 Days
                             </button>
-                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff63cc] hover:bg-[#02ff63] font-bold rounded-md text-sm py-2 px-3 mr-2 my-3">
+                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff6355] hover:bg-[#02ff63] font-bold rounded-xl text-sm py-2 px-3 mr-2 my-3">
                               30 Days
                             </button>
                           </div>
                           <table className="rounded-xl w-full text-sm mb-3">
                             <thead className="">
                               <tr>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left pl-16">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left pl-16">
                                   SIGNATURE
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left">
                                   BLOCK
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left">
                                   TIME
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left pr-16">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left pr-16">
                                   INSTRUCTIONS
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left pr-16">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left pr-16">
                                   BY
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left pr-16">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left pr-16">
                                   FEE (SOL)
                                 </th>
                               </tr>
@@ -250,13 +250,13 @@ export default function ActivityView({
                         <div className="w-full relative top-[-1.9rem] bg-[#1e1e1e] rounded-xl p-5">
                           {/* Filter Buttons */}
                           <div className="text-right mb-2">
-                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff63cc] hover:bg-[#02ff63] bg-[#02ff63] font-bold rounded-md text-sm py-2 px-3 mr-2 my-3">
+                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff6355] hover:bg-[#02ff63] bg-[#02ff63] font-bold rounded-xl text-sm py-2 px-3 mr-2 my-3">
                               7 Days
                             </button>
-                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff63cc] hover:bg-[#02ff63] font-bold rounded-md text-sm py-2 px-3 mr-2 my-3">
+                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff6355] hover:bg-[#02ff63] font-bold rounded-xl text-sm py-2 px-3 mr-2 my-3">
                               24 Days
                             </button>
-                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff63cc] hover:bg-[#02ff63] font-bold rounded-md text-sm py-2 px-3 mr-2 my-3">
+                            <button className="focus:border-transparent focus:ring-0 text-white mx-3 transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg hover:text-black hover:shadow-[#02ff6355] hover:bg-[#02ff63] font-bold rounded-xl text-sm py-2 px-3 mr-2 my-3">
                               30 Days
                             </button>
                           </div>
@@ -265,28 +265,28 @@ export default function ActivityView({
                             <thead>
                               <tr>
                                 <th className=""></th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left">
                                   NAME
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left">
                                   TRANSACTION ID
                                 </th>
                                 <th
-                                  className="text-[#02FF63] font-light pb-5 pt-2 text-left"
+                                  className="text-[#99ffa2] font-light pb-5 pt-2 text-left"
                                   colSpan={2}
                                 >
                                   TRANSACTION TYPE
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left">
                                   TIME
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left">
                                   TOTAL AMOUNT
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left">
                                   BUYER
                                 </th>
-                                <th className="text-[#02FF63] font-light pb-5 pt-2 text-left pr-16">
+                                <th className="text-[#99ffa2] font-light pb-5 pt-2 text-left pr-16">
                                   SELLER
                                 </th>
                               </tr>
@@ -312,10 +312,10 @@ export default function ActivityView({
                                     Bizarre Platypus #4688
                                   </td>
                                   <td className="py-5 pr-5">Lmahm … pfB</td>
-                                  <td className="py-5 pr-5 text-[#02ff63]">
+                                  <td className="py-5 pr-5 text-[#99ffa2]">
                                     Sale
                                   </td>
-                                  <td className="py-5 pr-5 text-[#6A00FF]">
+                                  <td className="py-5 pr-5 text-[#D099ff]">
                                     (ME v2)
                                   </td>
                                   <td className="py-5 pr-5">37 min ago</td>

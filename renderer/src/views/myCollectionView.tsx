@@ -13,18 +13,18 @@ function CollectionCard({ collectionUri, collectionAddress }) {
         <Link href={`/details/${collectionAddress}`}>
             <div className="w-min h-min bg-white mt-3 rounded-xl border border-gray-200 shadow-md dark:bg-[#1E1E1E] dark:border-[#1E1E1E] mx-auto">
                 <div className="hover:bg-gradient-to-r from-[#6A00FF] to-[#3C00B7] rounded-xl cursor-pointer">
-                    <div className="h-[13rem] w-[13rem] relative">
+                    <div className="h-[14rem] w-[14rem] relative">
                         <a title="cardImage" href="#">
-                            <div className="rounded-xl h-[13rem] w-[13rem] overflow-hidden">
+                            <div className="rounded-xl h-[14rem] w-[14rem] overflow-hidden">
                                 <div className="rounded-xl h-full w-full child hover:scale-110 transition" style={{ backgroundImage: "url(" + `${cachedUri}` + ")", backgroundSize: "cover", backgroundPosition: "center" }}></div>
                             </div>
                         </a>
                     </div>
-                    <div className="p-2">
+                    <div className="p-2 h-[70px]">
                         <a href="#">
                             <h5 className="pb-1 text-sm font-semibold text-center tracking-tight text-gray-900 dark:text-white">{cachedData && cachedData.name}</h5>
                         </a>
-                        <p className="text-xs font-normal text-white text-ellipsis line-2-clip overflow-hidden">{cachedData && cachedData.description}</p>
+                        <p className="text-center text-xs font-normal text-white text-ellipsis line-2-clip overflow-hidden">{cachedData && cachedData.description}</p>
                     </div>
                 </div>
             </div>

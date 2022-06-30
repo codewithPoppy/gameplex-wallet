@@ -29,7 +29,7 @@ export default function SendModalPage2(){
                         </tr>
                 </tbody>
             </table>
-            <hr className='border-dashed border opacity-20 mt-10' />
+            <div className='border-dashed-wide opacity-20 mt-10' />
         </>
     )
 }

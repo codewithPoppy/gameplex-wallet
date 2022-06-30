@@ -130,7 +130,7 @@ function AssetsView({
               </h1>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-1 content-center px-3">
+          <div className="grid grid-cols-2 gap-5 content-center">
             {/* Deposit Button */}
             <DepositModal
               modalHeader={"Deposit"}

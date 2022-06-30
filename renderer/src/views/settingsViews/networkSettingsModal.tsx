@@ -166,7 +166,7 @@ export default function NetworkSettingsModal({
                     <div className="col-span-2 pb-8 w-full flex justify-center">
                       <button
                         onClick={() => setIsOpen(false)}
-                        className="focus:border-transparent focus:ring-0 w-64 text-white bg-[#272727] border-[#383838] border transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 hover:shadow-lg font-bold rounded-xl text-sm py-3 px-3 mt-3"
+                        className="focus:border-transparent focus:ring-0 w-64 text-white bg-[#272727] border-[#383838] border transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 font-bold rounded-xl text-sm py-3 px-3 mt-3"
                         type="submit"
                       >
                         Done

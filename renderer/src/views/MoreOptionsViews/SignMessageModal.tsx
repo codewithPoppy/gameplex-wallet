@@ -115,7 +115,7 @@ export default function SessionsOptionsModal() {
                         </div>
                         <div className='flex flex-col pl-3 pt-5 gap gap-1'>
                           <h1 className='text-white text-left text-sm'>Bizarreplatypus-mint-one.io</h1>
-                          <a href="#" className='text-left text-[#6A00FF] text-xs'>http://localhost:3000</a>
+                          <a href="#" className='text-left text-[#d099ff] text-xs'>http://localhost:3000</a>
                         </div>
                       </div>
                       <div className='mb-4'>

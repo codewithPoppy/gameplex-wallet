@@ -135,7 +135,7 @@ export default function SecretPhraseModal({
                         </button>
                         <p
                           title="secret"
-                          className="focus:outline-none text-[#02FF63] bg-[#313131] w-full leading-9 border-[#383838] min-h-[9rem] border rounded-xl text-xs p-3 mr-2 mt-5 mb-2"
+                          className="focus:outline-none text-[#99ffa2] bg-[#313131] w-full leading-9 border-[#383838] min-h-[9rem] border rounded-xl text-xs p-3 mr-2 mt-5 mb-2"
                         >
                           {/* Space After each phrase is Critical */}
                           <span className="p-2 bg-[#cdffcc66] border border-[#02FF63] mr-3 rounded-xl">

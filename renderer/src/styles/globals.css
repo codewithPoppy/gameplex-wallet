@@ -51,3 +51,11 @@ html,.no-scrollbar {
   position: relative;
 }
 
+.border-dashed-wide {
+  background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+    background-position: bottom;
+  background-size: 15px 7px;
+  background-repeat: repeat-x;
+  height: 1px;
+  width: 100%;
+}

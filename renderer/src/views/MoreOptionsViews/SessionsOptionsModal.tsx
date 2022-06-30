@@ -42,7 +42,7 @@ function SessionsCard({ session, onDetails }: ISessionsProps) {
       </div>
       <div className='flex flex-col p-2 gap gap-1'>
         <h1 className='text-white text-left text-xs'>{name}</h1>
-        <a href="#" className='text-left text-[#6A00FF] text-xs'>{url}</a>
+        <a href="#" className='text-left text-[#d099ff] text-xs'>{url}</a>
       </div>
       <div className='flex justify-end'>
         <button type='button' onClick={onDetails} title="Details" className='bg-[#272727] p-3 w-[3rem] rounded-xl'>
