@@ -1,9 +1,13 @@
 import get from 'lodash.get';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import web3 from '@solana/web3.js'
-import { truncate } from '@/utils/HelperUtil'
-import { formatDistance, subDays } from 'date-fns'
+import web3 from '@solana/web3.js';
+import { truncate } from '@/utils/HelperUtil';
+import { Suspense } from 'react';
+import { formatDistance, subDays } from 'date-fns';
+import { Canvas, useLoader } from "@react-three/fiber";
+import { OrbitControls, useTexture } from '@react-three/drei';
+import * as THREE from 'three';
 
 // Left Sidebar: Collection Details - Image | Collection Details - Description | Swap | Sell 
 
@@ -156,17 +160,23 @@ function RightSidebar({attributes, activities, metaData, tokenData, transfers = 
 function MiddleSidebar({ CollectionName, CollectionDesc, NFTImage, NFTTag, NFTPrice, NFTSymbol }) {
     return (
         <div className="col-span-4">
-            <div className="card rounded-xl border-[#383838] border-2 bg-[#1e1e1e] mx-5 p-2 text-center">
-                <h1>{CollectionDesc}</h1>
-                <img className='w-full rounded-xl' src={NFTImage} alt="NFTImage" />
-                {/* <div>
-                    <span className='text-left'>Owner</span>
-                    <span className='text-right'>Price</span>
-                </div> */}
-            </div>
             <div className="grid grid-cols-2 gap-3 p-3">
                 <div className='col-span-2 text-center'>
-
+                    <div className='card rounded-xl mx-5 p-2 text-center'>
+                        {/* <img src={NFTImage} /> */}
+                        <Canvas
+                        camera={{
+                            position: [0, 0, 1],
+                          }}
+                          style={{width: '100%', height: '450px', borderRadius: '10px'}}
+                        >
+                            <ambientLight color={"white"} intensity={0.3} />
+                            <Suspense fallback={null}>
+                                <NFTRotation Image={NFTImage}/>
+                                <OrbitControls autoRotate autoRotateSpeed={5} />
+                            </Suspense>
+                        </Canvas>
+                    </div>
                     <div className='md:col-span-6 w-full rounded-xl mb-3 mt-5'>
                         <div className='p-3 text-left'>
                             <div className="grid grid-cols-2 text-center mx-16">
@@ -180,6 +190,19 @@ function MiddleSidebar({ CollectionName, CollectionDesc, NFTImage, NFTTag, NFTPr
             </div>
         </div>
     );
+}
+
+//rotation
+
+function NFTRotation({Image}){
+    const colorMap = useTexture(Image);
+    console.log(colorMap);
+    return(
+    <mesh>
+      <planeBufferGeometry args={[0.9, 0.9]}/>
+      <meshPhysicalMaterial map = {colorMap}  side={THREE.DoubleSide} />
+    </mesh>
+    )
 }
 
 function CollectionDetailsView({ collectionDetails, metaData, tokenData, transfersData, backButtonPath}) {
