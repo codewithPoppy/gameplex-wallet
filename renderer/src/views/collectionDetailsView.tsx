@@ -7,6 +7,8 @@ import { Suspense } from 'react';
 import { formatDistance, subDays } from 'date-fns';
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, useTexture } from '@react-three/drei';
+//import { RotationBox } from 'react-3d-rotation-box';
+
 import * as THREE from 'three';
 
 // Left Sidebar: Collection Details - Image | Collection Details - Description | Swap | Sell 
