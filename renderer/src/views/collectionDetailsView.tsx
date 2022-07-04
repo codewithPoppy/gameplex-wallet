@@ -179,10 +179,10 @@ function MiddleSidebar({ CollectionName, CollectionDesc, NFTImage, NFTTag, NFTPr
                             <div className={IMG.hexagon}>
                                 <p>#{NFTTag}</p>
                             </div>
-                            <div className={"rotate-90 -right-[45%] bottom-[40%]" + " " + IMG.glass}></div>
-                            <div className={"-rotate-90 -left-[45%] bottom-[40%]" + " " + IMG.glass}>
+                            <div className={"rotate-90 -right-[41.5%] bottom-[50%]" + " " + IMG.glass}></div>
+                            <div className={"-rotate-90 -left-[41.5%] bottom-[50%]" + " " + IMG.glass}>
                             </div>
-                            <div className={" -top-[24%] left-[20%]" + " " + IMG.glass}><span>{CollectionName}</span></div>
+                            <div className={" -top-[8.3%] left-[15%]" + " " + IMG.glass}><span>{CollectionName}</span></div>
                             <div className={'grid grid-cols-2 w-full bg-[#1e1e1e] rounded-b-lg pb-20' + " " + IMG.cardbottom}>
                                 <div className='text-left w-full'>
                                     <p className=" text-sm pt-6 ml-2 text-gray-500">Owner</p>
@@ -210,10 +210,10 @@ function MiddleSidebar({ CollectionName, CollectionDesc, NFTImage, NFTTag, NFTPr
 
                     </div>
                     <div className='md:col-span-6 w-full rounded-xl mb-3 mt-5'>
-                        <div className='p-3 text-left'>
-                            <div className="grid grid-cols-2 text-center mx-16">
-                                <button className="focus:outline-none w-[200px] text-white bg-[#1e1e1e] transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 focus:ring-4 hover:shadow-lg hover:shadow-[#000000] font-bold rounded-md text-sm py-2 px-3 mr-2 my-3" type="submit">Swap</button>
-                                <button className="focus:outline-none w-[200px] text-white bg-[#1e1e1e] transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 focus:ring-4 hover:shadow-lg hover:shadow-[#000000] font-bold rounded-md text-sm py-2 px-3 mr-2 my-3" type="submit">Sell</button>
+                        <div className='p-3 text-center'>
+                            <div className="inline text-center mx-16">
+                                <button className="focus:outline-none w-[20%] text-white bg-[#1e1e1e] transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 focus:ring-4 hover:shadow-lg hover:shadow-[#000000] font-bold rounded-md text-sm py-2 px-3 mr-5 my-3" type="submit">Swap</button>
+                                <button className="focus:outline-none w-[20%] text-white bg-[#1e1e1e] transition ease-out hover:-translate-y-1 hover:scale-100 delay-150 focus:ring-4 hover:shadow-lg hover:shadow-[#000000] font-bold rounded-md text-sm py-2 px-3 mr-5 my-3" type="submit">Sell</button>
                             </div>
                         </div>
                     </div>
@@ -236,7 +236,10 @@ function CollectionDetailsView({ collectionDetails, metaData, tokenData, transfe
                                 </svg>
                             </button>
                         </Link>
-                        <span className='opacity-30'>NFT collection | </span><span className='opacity-30'>Categories | </span><span className='opacity-30'>{metaData.description} | </span><span className='text-white'>Expanded view</span>
+                        <span className='opacity-30'>NFT collection | </span>
+                        <span className='opacity-30'>Categories | </span>
+                        <span className='opacity-30'>{get(tokenData, 'tokenInfo.name', '')} | </span>
+                        <span className='text-white'>Expanded view</span>
 
                         {/* Top Right Buttons */}
                         <span className='float-right'>
