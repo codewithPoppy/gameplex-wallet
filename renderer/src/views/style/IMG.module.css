@@ -70,11 +70,11 @@
     height: 0px;
     border-bottom: 40px solid rgba(255, 255, 255, 0.3);
     opacity: 0.8;
-    background-color: blue/ cover border-box padding-box;
+    background-color: transparent;;
     z-index: 999;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-
+    filter: blur(5px);
 }
 /* .glass {
     width: 60%;
