@@ -1,10 +1,8 @@
 .btn {
     transform-style: preserve-3d;
-
     --thickness: 10%;
+    z-index: 10;
     box-sizing: content-box;
-    clip-path: n-gon-hollow(100);
-
     background-color: #0e87b9;
     background-image: conic-gradient(#1e00ff,
             #3c00ff,
@@ -13,12 +11,8 @@
             #e440bb,
             #ffffff,
             #0015ff);
-
-    transition: clip-path ease-out 100ms;
-    filter: hue-rotate(0);
-    animation: transform linear 9s infinite;
+    animation: card linear 5s infinite;
 }
-
 .hexagon {
     position: absolute;
     display: flex;
@@ -36,25 +30,15 @@
     clip-path: polygon(15% 0%, 0% 50%, 15% 100%, 85% 100%, 100% 50%, 85% 0%);
 }
 
-@keyframes transform {
+@keyframes card {
     0% {
-        transform: rotatex(10deg) rotatey(10deg) rotatez(0deg);
+        transform: perspective(50rem) rotateX(-15deg) rotateY(15deg);
     }
-
-    15% {
-        transform: rotatex(10deg) rotatey(10deg) rotatez(0deg);
-    }
-
     50% {
-        transform: rotatex(10deg) rotatey(-10deg) rotatez(0deg);
+        transform: perspective(50rem) rotateX(15deg) rotateY(-15deg);
     }
-
-    65% {
-        transform: rotatex(10deg) rotatey(-10deg) rotatez(0deg);
-    }
-
     100% {
-        transform: rotatex(10deg) rotatey(10deg) rotatez(0deg);
+        transform: perspective(50rem) rotateX(-15deg) rotateY(15deg);
     }
 
     to {
@@ -62,19 +46,32 @@
     }
 }
 
+.glassTop {
+    width: 70%;
+    height: 50px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    /* filter: blur(15px); */
+    position: relative;
+    z-index: 99;
+    /* background: rgba(255, 255, 255, 0); */
+    border-bottom: 40px solid #AAA3;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
 
-.glass {
-    position: absolute;
-    display: flex;
-    width: 200px;
-    height: 0px;
-    border-bottom: 40px solid rgba(255, 255, 255, 0.3);
-    opacity: 0.8;
-    background-color: transparent;;
-    z-index: 999;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    filter: blur(5px);
+.glassLR {
+    width: 50px;
+    height: 50%;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    /* filter: blur(15px); */
+    position: relative;
+    z-index: 99;
+    /* background: rgba(255, 255, 255, 0); */
+    border-right: 40px solid #AAA3;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
 }
 /* .glass {
     width: 60%;
@@ -104,4 +101,8 @@
 
 .cardbottom {
     padding-bottom: 30px;
+}
+
+.trans{
+    transform: skewx(45 deg);
 }
